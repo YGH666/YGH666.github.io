@@ -1,0 +1,196 @@
+.clr{
+    clear: both;
+}
+#container{
+    margin: 0 auto;
+    width: 1020px;
+    background: url(nier.jpg);
+}
+
+#header{
+    width:1020px; 
+}
+
+#top{
+    height: 170px;
+}
+
+#nav{
+         
+        width: 1018px;/*框框的宽度*/
+        height: 50px;/*框框的长度*/
+        padding: 0px;/*将框框的padding设置为零，不然会导致框框里的内容与框边缘有间隔*/
+        border:1px solid #000;/*添加边框*/
+    }
+#nav img{
+    float: right;
+    margin: 10px 0 10px 0;
+}
+#nav li{
+    float: left;
+}
+
+#nav a{
+        float: left;
+        display: block;/*将a变成块状*/
+        width: 100px;/*设置块的宽度*/
+        height: 50px;/*设置块的长度*/
+        
+        font-family: "Arial","Mricrosoft Yahei","黑体","宋体",sans-serif;
+        line-height: 50px;/*设置字体在块中的高度*/
+       
+        margin: 0px 0px;/*块里的高宽通过margin设置*/
+        color: #363636;
+        text-align: center;/*字体居中*/
+        text-decoration: none;/*去掉下划线*/
+        font-size: 16px;
+    }
+
+#a1{
+    float: right;
+}
+    
+#nav a:hover{
+        background-color: white;
+    }
+
+.lass{
+    text-align: center;
+}
+
+#banner{
+    margin: 10px 0;
+    
+}
+
+#main{
+    
+}
+
+
+#lside{
+    height: 480px;
+    width: 694px;
+    border: 1px solid gray;
+    
+    float: left;
+}
+
+.four{
+    width: 326px;
+    height: 200px;
+    background: rgb(178, 185, 178,0.7);
+    margin: 10px;
+    float: left;
+}
+
+.four h2{
+    margin: 5px 0 5px 10px;
+    font-size: 16px;
+    font-family: "Arial","Mricrosoft Yahei","黑体","宋体",sans-serif;
+}
+
+.four img{
+    float: left;
+    margin: 0px 0 0 10px;
+    padding: 6px;
+    background: white;
+}
+
+.four ul{
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+.four li{
+    background: url(g1.png) repeat-y;
+    padding-left: 12px;
+    height: 16px;
+}
+
+.four a{
+    color: black;
+}
+
+.four a:visited{
+    color:white;
+}
+
+.subtitle{
+    height: 37px; 
+    background: rgb(178, 185, 178,0.7);
+}
+
+.subtitle img{
+    float: left;
+    margin: 5px 0 0 10px;
+}
+
+.subtitle h1{
+    float: left;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: "Arial","Mricrosoft Yahei","黑体","宋体",sans-serif;
+}
+
+.subtitle a{
+    float: right;
+    font-size: 12px;
+    color: gray;
+}
+
+#rside{
+    height: 485px;
+    width: 314px;
+   
+    float:right;
+}
+
+#art{
+    background: rgb(178, 185, 178,0.7);
+    margin-top: 1px;
+    padding-top: 5px;
+    margin-bottom: 1px;
+}
+
+
+#art a{
+    display: block;  
+    height: 29px;
+    padding-left:30px; 
+}
+
+#art a:hover{
+    background: white;
+}
+
+#contact{
+    margin-top: 1px;
+    height: 199px;
+    background: rgb(178, 185, 178,0.7);
+}
+
+#footer{
+    height: 120px;
+   
+}
+
+#footer ul{
+   
+    height: 40px;
+    background: rgb(178, 185, 178,0.7);
+}
+
+#footer li{
+    float: left; 
+    margin-top: 10px;
+    margin: 10px;
+}
+
+#footer address{
+    font-family:"Arial","Mricrosoft Yahei","黑体","宋体",sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+    background: rgb(178, 185, 178,0.7);
+}

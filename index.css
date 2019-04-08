@@ -38,7 +38,7 @@
         
         font-family: "Arial","Mricrosoft Yahei","黑体","宋体",sans-serif;
         line-height: 50px;/*设置字体在块中的高度*/
-       
+        background: rgb(178, 185, 178,0.2);
         margin: 0px 0px;/*块里的高宽通过margin设置*/
         color: #363636;
         text-align: center;/*字体居中*/
@@ -85,9 +85,10 @@
 }
 
 .four h2{
+    color: black;
     margin: 5px 0 5px 10px;
     font-size: 16px;
-    font-family: "Arial","Mricrosoft Yahei","黑体","宋体",sans-serif;
+    font-family: KaiTi,"Mricrosoft Yahei","黑体","宋体",sans-serif;
 }
 
 .four img{
@@ -110,11 +111,11 @@
 }
 
 .four a{
-    color: black;
+    color: white;
 }
 
 .four a:visited{
-    color:white;
+    color: black;
 }
 
 .subtitle{
@@ -129,6 +130,7 @@
 
 .subtitle h1{
     float: left;
+   
     font-size: 16px;
     margin-top: 10px;
     font-family: "Arial","Mricrosoft Yahei","黑体","宋体",sans-serif;
@@ -137,7 +139,8 @@
 .subtitle a{
     float: right;
     font-size: 12px;
-    color: gray;
+    margin-top: 10px;
+    color: black;
 }
 
 #rside{
@@ -158,16 +161,18 @@
 #art a{
     display: block;  
     height: 29px;
+    line-height: 30px;
     padding-left:30px; 
 }
 
 #art a:hover{
+    color: #ff832c;
     background: white;
 }
 
 #contact{
     margin-top: 1px;
-    height: 199px;
+    height: 50px;
     background: rgb(178, 185, 178,0.7);
 }
 

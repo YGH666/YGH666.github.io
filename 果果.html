@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="reset.css"/>
+<style>    
+body{
+    background:url(zsha.jpg);
+}
+     nav{
+            width: 2200px;
+            height: 720px;
+            border: 1px solid white;
+            margin: auto;
+            overflow: hidden;
+        }
+    ul {
+        text-align: center;
+            width: 200%;
+            height: 100%;
+            animation: picmove 5s linear infinite forwards;
+        }
+        
+    ul:hover {
+            animation-play-state: paused;
+    }
+
+    li img{
+        float: left;
+        width: 420px;
+        height: 600px;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: all 0.6s;
+        margin-top:60px;
+    }
+    li img:hover{
+				transform: scale(1.2);
+    }
+
+    #sp img{
+        width: 370px;
+    }
+    @keyframes picmove {
+            from {
+                transform: translate(0);
+            }
+            to {
+                transform: translate(-750px);
+            }
+        }
+    
+</style>
+</head>
+<body>
+        <nav>
+                <ul>
+                    <li><img src="ysq.jpg"  alt=""></li>
+                    <li><img src="ysq1.jpg" alt=""></li>
+                    <li><img src="ysq2.jpg" alt=""></li>
+                    <li><img src="ysq3.jpg" alt=""></li>
+                    <li><img src="ysq4.jpg" alt=""></li>
+                    <li><img src="ysq5.jpg" alt=""></li> 
+                </ul>        
+        </nav>     
+        <nav>  
+                <ul>
+                    <li><img src="ysq6.jpg" alt=""></li>
+                    <li><img src="ysq7.jpg" alt=""></li>
+                    <li><img src="ysq8.jpg" alt=""></li>
+                    <li><img src="ysq9.jpg" alt=""></li>
+                    <li><img src="ysq10.jpg" alt=""></li>
+                    <li><img src="ysq11.jpg" alt=""></li>
+                </ul>   
+        </nav>       
+        <nav>
+            <ul>
+                    <li><img src="ysq12.jpg" alt=""></li>
+                    <li><img src="ysq13.jpg" alt=""></li>
+                    <li><img src="ysq14.jpg" alt=""></li>
+                    <li><img src="ysq15.jpg" alt=""></li>
+            </ul>
+        </nav>          
+        
+</body>
+ 
+</html>

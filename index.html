@@ -5,10 +5,59 @@
 <title>首页第一次尝试</title>
 <link rel="stylesheet" href="reset.css"/>
 <link rel="stylesheet" href="index.css">
-<style></style>
+<style>
+#lside{
+    height: 445px;
+    width: 694px;
+    
+    border: 1px solid gray;
+}
+.act{
+    background: rgba(6, 7, 7);
+    
+} 
+#ldiv input{
+    width: 173.5px;
+    height: 44px;;
+    margin: 0px;
+    padding: 0px;
+    background:  rgba(0, 0, 0, 0.5);
+    float: left;
+} 
+
+#rdiv div{
+    float: left;
+    width: 691.5px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    display: none;
+    
+}
+
+#rdiv li{
+    float: left;
+    width: 39.5px;
+    height: 78.3px;
+    border: 1px solid gray;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rdiv img{
+    float: left;
+}
+
+#rdiv a{
+    color: aliceblue;
+}
+</style>
 
 <script>
-
+window.onload=function(){
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -17,8 +66,40 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 
+    
+    var oa=document.getElementById('baidu');
+    oa.onclick=function()
+   {
+       
+        var otxt=document.getElementById('txt');
+        oa.href=oa.href+otxt.value;
+        oa.onclick=true;
+    };
 
-alert('欢迎来到Mr.Yang的个人网页');
+    var odiv=document.getElementById('ldiv');  
+    var abtn=odiv.getElementsByTagName('input');
+    var pdiv=document.getElementById('rdiv');
+    var adiv=pdiv.getElementsByTagName('div');
+
+    for(var i=0;i<abtn.length;i++){
+        abtn[i].num=i;
+        abtn[i].onclick=function(){
+        for(var i=0;i<abtn.length;i++)
+        {
+            abtn[i].className='';
+            adiv[i].style.display='none';
+        }
+        this.className='act';
+        adiv[this.num].style.display='block';
+        };   
+        
+        
+    }   
+
+}
+
+
+
 </script>
 
 </head>
@@ -34,7 +115,10 @@ alert('欢迎来到Mr.Yang的个人网页');
                     <li><a href="#" target="_blank">游戏</a></li>
                     <li><a href="猪.html" target="_blank">猪🐖</a></li>
                     <li><a href="#">羊🐏</a></li>    
-                    <img src="sousuo.png" alt=""> 
+                    <input type="text" name="" id="txt" >
+                    <li id="li1">
+                    <a id="baidu" href='https://www.baidu.com/s?wd=' target="_blank"><p>百度一下</p> </a>
+                    </li> 
                     
                 </ul>  
             </div>
@@ -47,58 +131,65 @@ alert('欢迎来到Mr.Yang的个人网页');
             </div>
             
             <div id="main">
-                <div id="lside">
-                    <div class="subtitle">
-                        <img src="subti.jpg" alt="">
-                        <h1>我喜欢的小姐姐</h1>
-                        <a href="#">MORE&gt;&gt;</a>
-                    </div>
-                    <div class="four">
-                        <h2>2B</h2>
-                        <img src="2B.jpg" alt="" width="190px" height="150px">
-                        <ul>
-                            <li><a href="2B1.webp.jpg">2B写真-1</a></li>
-                            <li><a href="2B2.webp.jpg">2B写真-2</a></li>
-                            <li><a href="2B3.webp.jpg">2B写真-3</a></li>
-                            <li><a href="2B4.webp">2B写真-4</a></li>
-                            <li><a href="2B5.JPEG">2B写真-5</a></li>
-                        </ul>
-                    </div>
-                    <div class="four">
-                            <h2>A2</h2>
-                            <img src="A2.jpg" alt="" width="190px" height="150px">
-                            <ul>
-                                    <li><a href="A21.jpg">A2写真-1</a></li>
-                                    <li><a href="A22.jpg">A2写真-2</a></li>
-                                    <li><a href="A23.jpg">A2写真-3</a></li>
-                                    <li><a href="A24.jpg">A2写真-4</a></li>
-                                    <li><a href="A25.jpg">A2写真-5</a></li>
-                            </ul>
-                    </div>
-                    <div class="four">
-                            <h2>雪之下雪乃</h2>
-                            <img src="雪乃.jpg" alt="" width="190px" height="150px">
-                            <ul>
-                                    <li><a href="雪乃1.jpg">雪乃写真-1</a></li>
-                                    <li><a href="雪乃2.JPEG">雪乃写真-2</a></li>
-                                    <li><a href="雪乃3.JPEG">雪乃写真-3</a></li>
-                                    <li><a href="雪乃4.JPEG">雪乃写真-4</a></li>
-                                    <li><a href="雪乃5.JPEG">雪乃写真-5</a></li>
-                            </ul>
-                    </div>
-                    <div class="four">
-                            <h2>由比滨结衣</h2>
-                            <img src="结衣.gif" alt="" width="190px" height="150px">
-                            <ul>
-                                    <li><a href="结衣1.jpg">结衣写真-1</a></li>
-                                    <li><a href="结衣2.jpg">结衣写真-2</a></li>
-                                    <li><a href="结衣3.jpg">结衣写真-3</a></li>
-                                    <li><a href="结衣4.jpg">结衣写真-4</a></li>
-                                    <li><a href="结衣5.jpg">结衣写真-5</a></li>
-                            </ul>
-                    </div>
-                   
-                </div>
+                    <div id="lside">
+                            <div class="subtitle">
+                                    <img src="subti.jpg" alt="">
+                                    <h1>我喜欢的小姐姐</h1>
+                                    <a href="#">MORE&gt;&gt;</a>
+                            </div>
+                            <div id="ldiv">
+                                <input  type="button" value="2B">
+                                <input  type="button" value="A2">
+                                <input  type="button" value="雪之下雪乃">
+                                <input  type="button" value="由比滨结衣">
+                            </div>
+                            <div id="rdiv">
+                                <div style="display: block">
+                    
+                                        <img src="2B.jpg" alt="" width="650px" height="400px">
+                                        <ul>
+                                            <li><a href="2B1.webp.jpg">1</a></li>
+                                            <li><a href="2B2.webp.jpg">2</a></li>
+                                            <li><a href="2B3.webp.jpg">3</a></li>
+                                            <li><a href="2B4.webp">4</a></li>
+                                            <li><a href="2B5.JPEG">5</a></li>
+                                        </ul>
+                                </div>
+                                <div>
+                                      
+                                        <img src="A2.jpg" alt="" width="650px" height="400px">
+                                        <ul>
+                                                <li><a href="A21.jpg">1</a></li>
+                                                <li><a href="A22.jpg">2</a></li>
+                                                <li><a href="A23.jpg">3</a></li>
+                                                <li><a href="A24.jpg">4</a></li>
+                                                <li><a href="A25.jpg">5</a></li>
+                                        </ul>
+                                </div>
+                                <div>
+                                        
+                                        <img src="雪乃.jpg" alt="" width="650px" height="400px">
+                                        <ul>
+                                                <li><a href="雪乃1.jpg">1</a></li>
+                                                <li><a href="雪乃2.JPEG">2</a></li>
+                                                <li><a href="雪乃3.JPEG">3</a></li>
+                                                <li><a href="雪乃4.JPEG">4</a></li>
+                                                <li><a href="雪乃5.JPEG">5</a></li>
+                                        </ul>
+                                </div>
+                                <div>
+                                        
+                                        <img src="结衣.gif" alt="" width="650px" height="400px">
+                                        <ul>
+                                                <li><a href="结衣1.jpg">1</a></li>
+                                                <li><a href="结衣2.jpg">2</a></li>
+                                                <li><a href="结衣3.jpg">3</a></li>
+                                                <li><a href="结衣4.jpg">4</a></li>
+                                                <li><a href="结衣5.jpg">5</a></li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
 
                 <div id="rside">
                     <div class="subtitle">

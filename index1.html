@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页第一次尝试</title>
+<link rel="stylesheet" href="reset.css"/>
+<link rel="stylesheet" href="index.css">
+<style>
+#lside{
+    height: 445px;
+    width: 694px;
+    
+    border: 1px solid gray;
+}
+.act{
+    background: rgba(6, 7, 7);
+    
+} 
+#ldiv input{
+    width: 173.5px;
+    height: 44px;;
+    margin: 0px;
+    padding: 0px;
+    background:  rgba(0, 0, 0, 0.5);
+    float: left;
+} 
+
+#rdiv div{
+    float: left;
+    width: 691.5px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    display: none;
+    
+}
+
+#rdiv li{
+    float: left;
+    width: 39.5px;
+    height: 78.3px;
+    border: 1px solid gray;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rdiv img{
+    float: left;
+}
+
+#rdiv a{
+    color: aliceblue;
+}
+</style>
+
+<script>
+window.onload=function(){
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?704a0df2427d0923b5369b848ddb8261";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+    
+    var oa=document.getElementById('baidu');
+    oa.onclick=function()
+   {
+       
+        var otxt=document.getElementById('txt');
+        oa.href=oa.href+otxt.value;
+        oa.onclick=true;
+    };
+
+    var odiv=document.getElementById('ldiv');  
+    var abtn=odiv.getElementsByTagName('input');
+    var pdiv=document.getElementById('rdiv');
+    var adiv=pdiv.getElementsByTagName('div');
+
+    for(var i=0;i<abtn.length;i++){
+        abtn[i].num=i;
+        abtn[i].onclick=function(){
+        for(var i=0;i<abtn.length;i++)
+        {
+            abtn[i].className='';
+            adiv[i].style.display='none';
+        }
+        this.className='act';
+        adiv[this.num].style.display='block';
+        };   
+        
+        
+    }   
+
+}
+
+
+
+</script>
+
+</head>
+    <body>
+        <div id="container">
+            <div id="header">
+            <div id="top"></div>  
+                <ul id="nav">
+                    <li><a href="class.html" target="_blank">程序员课程表</a></li>
+                    <li><a href="果果.html" target="_blank">果果</a></li>
+                    <li><a href="#" target="_blank">这鞋有毒</a></li>
+                    <li><a href="#" target="_blank">手办</a></li>
+                    <li><a href="#" target="_blank">游戏</a></li>
+                    <li><a href="猪.html" target="_blank">猪🐖</a></li>
+                    <li><a href="#">羊🐏</a></li>    
+                    <input type="text" name="" id="txt" >
+                    <li id="li1">
+                    <a id="baidu" href='https://www.baidu.com/s?wd=' target="_blank"><p>百度一下</p> </a>
+                    </li> 
+                    
+                </ul>  
+            </div>
+
+            <div class="lass">
+                <img src="timg.jpg" alt="" id="banner"  width="750px" height="431px" >
+               
+                                    
+            
+            </div>
+            
+            <div id="main">
+                    <div id="lside">
+                            <div class="subtitle">
+                                    <img src="subti.jpg" alt="">
+                                    <h1>我喜欢的小姐姐</h1>
+                                    <a href="#">MORE&gt;&gt;</a>
+                            </div>
+                            <div id="ldiv">
+                                <input  type="button" value="2B">
+                                <input  type="button" value="A2">
+                                <input  type="button" value="雪之下雪乃">
+                                <input  type="button" value="由比滨结衣">
+                            </div>
+                            <div id="rdiv">
+                                <div style="display: block">
+                    
+                                        <img src="2B.jpg" alt="" width="650px" height="400px">
+                                        <ul>
+                                            <li><a href="2B1.webp.jpg">1</a></li>
+                                            <li><a href="2B2.webp.jpg">2</a></li>
+                                            <li><a href="2B3.webp.jpg">3</a></li>
+                                            <li><a href="2B4.webp">4</a></li>
+                                            <li><a href="2B5.JPEG">5</a></li>
+                                        </ul>
+                                </div>
+                                <div>
+                                      
+                                        <img src="A2.jpg" alt="" width="650px" height="400px">
+                                        <ul>
+                                                <li><a href="A21.jpg">1</a></li>
+                                                <li><a href="A22.jpg">2</a></li>
+                                                <li><a href="A23.jpg">3</a></li>
+                                                <li><a href="A24.jpg">4</a></li>
+                                                <li><a href="A25.jpg">5</a></li>
+                                        </ul>
+                                </div>
+                                <div>
+                                        
+                                        <img src="雪乃.jpg" alt="" width="650px" height="400px">
+                                        <ul>
+                                                <li><a href="雪乃1.jpg">1</a></li>
+                                                <li><a href="雪乃2.JPEG">2</a></li>
+                                                <li><a href="雪乃3.JPEG">3</a></li>
+                                                <li><a href="雪乃4.JPEG">4</a></li>
+                                                <li><a href="雪乃5.JPEG">5</a></li>
+                                        </ul>
+                                </div>
+                                <div>
+                                        
+                                        <img src="结衣.gif" alt="" width="650px" height="400px">
+                                        <ul>
+                                                <li><a href="结衣1.jpg">1</a></li>
+                                                <li><a href="结衣2.jpg">2</a></li>
+                                                <li><a href="结衣3.jpg">3</a></li>
+                                                <li><a href="结衣4.jpg">4</a></li>
+                                                <li><a href="结衣5.jpg">5</a></li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                <div id="rside">
+                    <div class="subtitle">
+                            <img src="subti.jpg" alt="">
+                            <h1>我推荐的番剧</h1>
+                            <a href="#">MORE&gt;&gt;</a>
+                    </div>
+                    <ul id="art">
+                        <li><a href="http://www.fengchedm.com/content/26118.html" target="_blank">--&gt; 家有女友</a></li>
+                        <li><a href="http://www.fengchedm.com/content/4662.html" target="_blank">--&gt; 缘之空！！！！</a></li>
+                        <li><a href="https://search.bilibili.com/all?keyword=黑礁" target="_blank">--&gt; 经典老番 黑礁 系列</a></li>
+                        <li><a href="https://search.bilibili.com/all?keyword=我的青春恋爱物语果然有问题。" target="_blank">--&gt; 暖男巅峰 我的青春恋爱物语果然有问题</a></li>
+                        <li><a href="http://www.dilidili.name/anime/onepunchman/" target="_blank">--&gt; 一拳超人 第一季第二季</a></li>
+                        <li><a href="https://search.bilibili.com/all?keyword=游戏人生" target="_blank">--&gt; 个人认为的神作 游戏人生</a></li>
+                        <li><a href="http://www.dilidili.name/anime/ansatsuzrb/" target="_blank">--&gt; 暗杀教室真人版</a></li>
+                        <li><a href="http://www.dilidili.name/anime/steinsgatefu/" target="_blank">--&gt; 命运石之门：负荷领域的既视</a></li>
+                        <li><a href="http://www.q1028.com/play/129789/0/0.html" target="_blank">--&gt; 我的英雄学院：两位英雄</a></li>
+                        <li><a href="https://www.bilibili.com/bangumi/media/md5058" target="_blank">--&gt; 灵能百分百（龙套小天使！）</a></li>
+                        <li><a href="http://www.fengchedm.com/common/search.aspx?key=进击的巨人" target="_blank">--&gt; 进击的巨人系列</a></li>
+                        <li><a href="http://www.dilidili.name/anime/yaren/" target="_blank">--&gt; 亚人 第一二季剧场版</a></li>
+                       
+
+                    </ul>
+                    <div class="subtitle">
+                            <img src="subti.jpg" alt="">
+                            <h1>无聊站长，在线陪聊</h1>
+                            <a href="#">MORE&gt;&gt;</a>
+                    </div>
+                    <div id="contact">
+                        <li><a href="#">--&gt; Tel:18181991126</a></li>
+                        <li><a href="tencent://message/?uin=841219366&Menu=yes">--&gt; <span>点击即可在线撩站长</span></a></li>
+                        <li><a href="#">--&gt; E-mail:841219366@qq.com</a></li>
+                        
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+
+            <div id="footer">
+                <ul>
+                    <li><a href="#">联系我1</a></li>
+                    <li><a href="#">联系我2</a></li>
+                    <li><a href="#">联系我3</a></li>
+                    <li><a href="#">联系我4</a></li>
+                    <li><a href="#">联系我5</a></li>
+                    <li><a href="#">联系我6</a></li>
+                    <li><a href="#">联系我7</a></li>
+                </ul>
+                <address> &copy; 我也不知道该怎么写，就随便写写吧。2019/4/7</address>
+            </div>
+        </div>
+        
+    </body>
+</html>
